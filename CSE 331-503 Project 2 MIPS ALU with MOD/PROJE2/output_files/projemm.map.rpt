@@ -1,0 +1,886 @@
+Analysis & Synthesis report for projemm
+Sun Dec 10 23:17:49 2023
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |alu_32|mod:r8|mod_cu:cu1|curr_state
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Port Connectivity Checks: "mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1"
+ 14. Port Connectivity Checks: "mod:r8|mod_dp:dp1|sub_add_32bit:sub1"
+ 15. Port Connectivity Checks: "LessThan32Bit:r2|sub_add_32bit:sub1"
+ 16. Port Connectivity Checks: "adder_32bit:r1|adder_16bit:a1"
+ 17. Port Connectivity Checks: "adder_32bit:r1|adder_16bit:a0|adder_4bit:a0|or_5bit:or7"
+ 18. Port Connectivity Checks: "adder_32bit:r1|adder_16bit:a0"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Dec 10 23:17:49 2023       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; projemm                                     ;
+; Top-level Entity Name           ; alu_32                                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 34                                          ;
+; Total pins                      ; 101                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7D6F31C7     ;                    ;
+; Top-level entity name                                                           ; alu_32             ; projemm            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; xor_32bit.v                      ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/xor_32bit.v         ;         ;
+; and_3bit.v                       ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/and_3bit.v          ;         ;
+; or_3bit.v                        ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/or_3bit.v           ;         ;
+; or_4bit.v                        ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/or_4bit.v           ;         ;
+; and_4bit.v                       ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/and_4bit.v          ;         ;
+; or_5bit.v                        ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/or_5bit.v           ;         ;
+; and_5bit.v                       ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/and_5bit.v          ;         ;
+; adder_4bit.v                     ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v        ;         ;
+; adder_32bit.v                    ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v       ;         ;
+; sub_add_32bit.v                  ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/sub_add_32bit.v     ;         ;
+; nor_32bit.v                      ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/nor_32bit.v         ;         ;
+; or_32bit.v                       ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/or_32bit.v          ;         ;
+; and_32bit.v                      ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/and_32bit.v         ;         ;
+; xor_32bit_to_1bit.v              ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/xor_32bit_to_1bit.v ;         ;
+; LessThan32Bit.v                  ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/LessThan32Bit.v     ;         ;
+; and_32bit_to_1bit.v              ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/and_32bit_to_1bit.v ;         ;
+; adder_16bit.v                    ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v       ;         ;
+; mod_cu.v                         ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/mod_cu.v            ;         ;
+; comparator_32bit.v               ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/comparator_32bit.v  ;         ;
+; mod_dp.v                         ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v            ;         ;
+; mod.v                            ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/mod.v               ;         ;
+; alu_32.v                         ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v            ;         ;
+; mux2_to_1.v                      ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/mux2_to_1.v         ;         ;
+; mux4_to_1.v                      ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/mux4_to_1.v         ;         ;
+; mux8_to_1.v                      ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/mux8_to_1.v         ;         ;
+; mux_32.v                         ; yes             ; User Verilog HDL File  ; C:/Users/LENOVO/Desktop/quartus/arife/mux_32.v            ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 308            ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 482            ;
+;     -- 7 input functions                    ; 2              ;
+;     -- 6 input functions                    ; 131            ;
+;     -- 5 input functions                    ; 75             ;
+;     -- 4 input functions                    ; 152            ;
+;     -- <=3 input functions                  ; 122            ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 34             ;
+;                                             ;                ;
+; I/O pins                                    ; 101            ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; Aluop[1]~input ;
+; Maximum fan-out                             ; 112            ;
+; Total fan-out                               ; 2363           ;
+; Average fan-out                             ; 3.29           ;
++---------------------------------------------+----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                             ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                      ; Entity Name       ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+; |alu_32                                  ; 482 (0)             ; 34 (0)                    ; 0                 ; 0          ; 101  ; 0            ; |alu_32                                                                                                                                  ; alu_32            ; work         ;
+;    |LessThan32Bit:r2|                    ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2                                                                                                                 ; LessThan32Bit     ; work         ;
+;       |sub_add_32bit:sub1|               ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1                                                                                              ; sub_add_32bit     ; work         ;
+;          |adder_32bit:adder1|            ; 24 (8)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1                                                                           ; adder_32bit       ; work         ;
+;             |adder_16bit:a0|             ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0                                                            ; adder_16bit       ; work         ;
+;                |adder_4bit:a2|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2                                              ; adder_4bit        ; work         ;
+;                   |and_4bit:and16|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2|and_4bit:and16                               ; and_4bit          ; work         ;
+;                |adder_4bit:a3|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3                                              ; adder_4bit        ; work         ;
+;                   |and_4bit:and16|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3|and_4bit:and16                               ; and_4bit          ; work         ;
+;             |adder_16bit:a1|             ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1                                                            ; adder_16bit       ; work         ;
+;                |adder_4bit:a1|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1                                              ; adder_4bit        ; work         ;
+;                   |and_4bit:and16|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1|and_4bit:and16                               ; and_4bit          ; work         ;
+;                |adder_4bit:a2|           ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a2                                              ; adder_4bit        ; work         ;
+;                   |and_4bit:and16|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a2|and_4bit:and16                               ; and_4bit          ; work         ;
+;                |adder_4bit:a3|           ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a3                                              ; adder_4bit        ; work         ;
+;                   |or_4bit:or6|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a3|or_4bit:or6                                  ; or_4bit           ; work         ;
+;                |or_4bit:or3|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|LessThan32Bit:r2|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|or_4bit:or3                                                ; or_4bit           ; work         ;
+;    |adder_32bit:r1|                      ; 36 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1                                                                                                                   ; adder_32bit       ; work         ;
+;       |adder_16bit:a0|                   ; 17 (2)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0                                                                                                    ; adder_16bit       ; work         ;
+;          |adder_4bit:a0|                 ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a0                                                                                      ; adder_4bit        ; work         ;
+;             |or_4bit:or6|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a0|or_4bit:or6                                                                          ; or_4bit           ; work         ;
+;          |adder_4bit:a1|                 ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a1                                                                                      ; adder_4bit        ; work         ;
+;             |and_4bit:and16|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a1|and_4bit:and16                                                                       ; and_4bit          ; work         ;
+;             |or_3bit:or5|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a1|or_3bit:or5                                                                          ; or_3bit           ; work         ;
+;             |or_4bit:or6|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a1|or_4bit:or6                                                                          ; or_4bit           ; work         ;
+;             |or_4bit:or8|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a1|or_4bit:or8                                                                          ; or_4bit           ; work         ;
+;          |adder_4bit:a2|                 ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a2                                                                                      ; adder_4bit        ; work         ;
+;             |or_3bit:or5|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a2|or_3bit:or5                                                                          ; or_3bit           ; work         ;
+;             |or_4bit:or6|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a2|or_4bit:or6                                                                          ; or_4bit           ; work         ;
+;             |or_4bit:or8|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a2|or_4bit:or8                                                                          ; or_4bit           ; work         ;
+;          |adder_4bit:a3|                 ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a3                                                                                      ; adder_4bit        ; work         ;
+;             |or_3bit:or5|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a3|or_3bit:or5                                                                          ; or_3bit           ; work         ;
+;             |or_4bit:or6|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|adder_4bit:a3|or_4bit:or6                                                                          ; or_4bit           ; work         ;
+;          |or_3bit:or2|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|or_3bit:or2                                                                                        ; or_3bit           ; work         ;
+;          |or_4bit:or3|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a0|or_4bit:or3                                                                                        ; or_4bit           ; work         ;
+;       |adder_16bit:a1|                   ; 15 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1                                                                                                    ; adder_16bit       ; work         ;
+;          |adder_4bit:a0|                 ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a0                                                                                      ; adder_4bit        ; work         ;
+;             |or_3bit:or5|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a0|or_3bit:or5                                                                          ; or_3bit           ; work         ;
+;             |or_4bit:or6|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a0|or_4bit:or6                                                                          ; or_4bit           ; work         ;
+;          |adder_4bit:a1|                 ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a1                                                                                      ; adder_4bit        ; work         ;
+;             |or_3bit:or5|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a1|or_3bit:or5                                                                          ; or_3bit           ; work         ;
+;             |or_4bit:or6|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a1|or_4bit:or6                                                                          ; or_4bit           ; work         ;
+;             |or_4bit:or8|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a1|or_4bit:or8                                                                          ; or_4bit           ; work         ;
+;          |adder_4bit:a2|                 ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a2                                                                                      ; adder_4bit        ; work         ;
+;             |or_4bit:or6|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a2|or_4bit:or6                                                                          ; or_4bit           ; work         ;
+;          |adder_4bit:a3|                 ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a3                                                                                      ; adder_4bit        ; work         ;
+;             |or_3bit:or5|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|adder_4bit:a3|or_3bit:or5                                                                          ; or_3bit           ; work         ;
+;          |or_3bit:or2|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|or_3bit:or2                                                                                        ; or_3bit           ; work         ;
+;          |or_4bit:or3|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|adder_32bit:r1|adder_16bit:a1|or_4bit:or3                                                                                        ; or_4bit           ; work         ;
+;    |and_32bit:r6|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|and_32bit:r6                                                                                                                     ; and_32bit         ; work         ;
+;    |mod:r8|                              ; 237 (0)             ; 34 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8                                                                                                                           ; mod               ; work         ;
+;       |mod_cu:cu1|                       ; 5 (5)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_cu:cu1                                                                                                                ; mod_cu            ; work         ;
+;       |mod_dp:dp1|                       ; 232 (46)            ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1                                                                                                                ; mod_dp            ; work         ;
+;          |comparator_32bit:com1|         ; 34 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1                                                                                          ; comparator_32bit  ; work         ;
+;             |sub_add_32bit:sub_32bit_1|  ; 34 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1                                                                ; sub_add_32bit     ; work         ;
+;                |adder_32bit:adder1|      ; 34 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1                                             ; adder_32bit       ; work         ;
+;                   |adder_16bit:a0|       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a0                              ; adder_16bit       ; work         ;
+;                      |adder_4bit:a2|     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2                ; adder_4bit        ; work         ;
+;                         |or_4bit:or8|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2|or_4bit:or8    ; or_4bit           ; work         ;
+;                      |adder_4bit:a3|     ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3                ; adder_4bit        ; work         ;
+;                         |and_4bit:and16| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3|and_4bit:and16 ; and_4bit          ; work         ;
+;                   |adder_16bit:a1|       ; 20 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a1                              ; adder_16bit       ; work         ;
+;                      |adder_4bit:a1|     ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1                ; adder_4bit        ; work         ;
+;                         |or_4bit:or8|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1|or_4bit:or8    ; or_4bit           ; work         ;
+;                      |adder_4bit:a2|     ; 3 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a2                ; adder_4bit        ; work         ;
+;                         |and_4bit:and16| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a2|and_4bit:and16 ; and_4bit          ; work         ;
+;                      |adder_4bit:a3|     ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a3                ; adder_4bit        ; work         ;
+;                         |or_4bit:or6|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a3|or_4bit:or6    ; or_4bit           ; work         ;
+;                      |or_4bit:or3|       ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1|adder_32bit:adder1|adder_16bit:a1|or_4bit:or3                  ; or_4bit           ; work         ;
+;          |sub_add_32bit:sub1|            ; 152 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1                                                                                             ; sub_add_32bit     ; work         ;
+;             |adder_32bit:adder1|         ; 152 (8)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1                                                                          ; adder_32bit       ; work         ;
+;                |adder_16bit:a0|          ; 72 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0                                                           ; adder_16bit       ; work         ;
+;                   |adder_4bit:a0|        ; 12 (8)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a0                                             ; adder_4bit        ; work         ;
+;                      |or_3bit:or5|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a0|or_3bit:or5                                 ; or_3bit           ; work         ;
+;                      |or_4bit:or8|       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a0|or_4bit:or8                                 ; or_4bit           ; work         ;
+;                   |adder_4bit:a1|        ; 21 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a1                                             ; adder_4bit        ; work         ;
+;                      |and_4bit:and16|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a1|and_4bit:and16                              ; and_4bit          ; work         ;
+;                      |or_4bit:or6|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a1|or_4bit:or6                                 ; or_4bit           ; work         ;
+;                      |or_4bit:or8|       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a1|or_4bit:or8                                 ; or_4bit           ; work         ;
+;                   |adder_4bit:a2|        ; 20 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2                                             ; adder_4bit        ; work         ;
+;                      |and_4bit:and16|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2|and_4bit:and16                              ; and_4bit          ; work         ;
+;                      |or_4bit:or6|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2|or_4bit:or6                                 ; or_4bit           ; work         ;
+;                      |or_4bit:or8|       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2|or_4bit:or8                                 ; or_4bit           ; work         ;
+;                   |adder_4bit:a3|        ; 14 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3                                             ; adder_4bit        ; work         ;
+;                      |and_3bit:and9|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3|and_3bit:and9                               ; and_3bit          ; work         ;
+;                      |and_4bit:and8|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3|and_4bit:and8                               ; and_4bit          ; work         ;
+;                      |or_3bit:or5|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3|or_3bit:or5                                 ; or_3bit           ; work         ;
+;                      |or_4bit:or6|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3|or_4bit:or6                                 ; or_4bit           ; work         ;
+;                   |and_3bit:and2|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|and_3bit:and2                                             ; and_3bit          ; work         ;
+;                   |or_3bit:or2|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|or_3bit:or2                                               ; or_3bit           ; work         ;
+;                   |or_4bit:or3|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a0|or_4bit:or3                                               ; or_4bit           ; work         ;
+;                |adder_16bit:a1|          ; 72 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1                                                           ; adder_16bit       ; work         ;
+;                   |adder_4bit:a0|        ; 16 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a0                                             ; adder_4bit        ; work         ;
+;                      |and_3bit:and6|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a0|and_3bit:and6                               ; and_3bit          ; work         ;
+;                      |and_4bit:and8|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a0|and_4bit:and8                               ; and_4bit          ; work         ;
+;                      |or_3bit:or5|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a0|or_3bit:or5                                 ; or_3bit           ; work         ;
+;                      |or_4bit:or6|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a0|or_4bit:or6                                 ; or_4bit           ; work         ;
+;                      |or_4bit:or8|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a0|or_4bit:or8                                 ; or_4bit           ; work         ;
+;                   |adder_4bit:a1|        ; 22 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1                                             ; adder_4bit        ; work         ;
+;                      |and_4bit:and8|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1|and_4bit:and8                               ; and_4bit          ; work         ;
+;                      |or_3bit:or5|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1|or_3bit:or5                                 ; or_3bit           ; work         ;
+;                      |or_4bit:or8|       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1|or_4bit:or8                                 ; or_4bit           ; work         ;
+;                   |adder_4bit:a2|        ; 18 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a2                                             ; adder_4bit        ; work         ;
+;                      |and_4bit:and8|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a2|and_4bit:and8                               ; and_4bit          ; work         ;
+;                      |or_3bit:or5|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a2|or_3bit:or5                                 ; or_3bit           ; work         ;
+;                   |adder_4bit:a3|        ; 7 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a3                                             ; adder_4bit        ; work         ;
+;                      |or_4bit:or6|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a3|or_4bit:or6                                 ; or_4bit           ; work         ;
+;                   |or_3bit:or2|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|or_3bit:or2                                               ; or_3bit           ; work         ;
+;                   |or_4bit:or3|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mod:r8|mod_dp:dp1|sub_add_32bit:sub1|adder_32bit:adder1|adder_16bit:a1|or_4bit:or3                                               ; or_4bit           ; work         ;
+;    |mux_32:r9|                           ; 98 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9                                                                                                                        ; mux_32            ; work         ;
+;       |mux8_to_1:m10|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m10                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m10|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m10|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m10|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m11|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m11                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m11|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m11|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m11|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m12|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m12                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m12|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m12|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m12|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m13|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m13                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m13|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m13|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m13|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m14|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m14                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m14|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m14|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m14|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m15|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m15                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m15|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m15|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m15|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m16|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m16                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m16|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m16|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m16|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m17|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m17                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m17|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m17|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m17|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m18|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m18                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m18|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m18|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m18|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m19|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m19                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m19|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m19|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m19|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m1|                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m1                                                                                                           ; mux8_to_1         ; work         ;
+;          |mux4_to_1:m1|                  ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m1|mux4_to_1:m1                                                                                              ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m3|               ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m1|mux4_to_1:m1|mux2_to_1:m3                                                                                 ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m20|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m20                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m20|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m20|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m20|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m21|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m21                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m21|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m21|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m21|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m22|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m22                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m22|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m22|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m22|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m23|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m23                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m23|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m23|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m23|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m24|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m24                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m24|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m24|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m24|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m25|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m25                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m25|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m25|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m25|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m26|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m26                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m26|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m26|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m26|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m27|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m27                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m27|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m27|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m27|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m28|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m28                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m28|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m28|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m28|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m29|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m29                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m29|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m29|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m29|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m2|                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m2                                                                                                           ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m2|mux2_to_1:m3                                                                                              ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m2|mux4_to_1:m2                                                                                              ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m2|mux4_to_1:m2|mux2_to_1:m1                                                                                 ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m30|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m30                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m30|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m30|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m30|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m31|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m31                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m31|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m31|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m31|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m32|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m32                                                                                                          ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m32|mux2_to_1:m3                                                                                             ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m32|mux4_to_1:m2                                                                                             ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m32|mux4_to_1:m2|mux2_to_1:m1                                                                                ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m3|                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m3                                                                                                           ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m3|mux2_to_1:m3                                                                                              ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m3|mux4_to_1:m2                                                                                              ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m3|mux4_to_1:m2|mux2_to_1:m1                                                                                 ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m4|                     ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m4                                                                                                           ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m4|mux2_to_1:m3                                                                                              ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m4|mux4_to_1:m2                                                                                              ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m4|mux4_to_1:m2|mux2_to_1:m1                                                                                 ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m5|                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m5                                                                                                           ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m5|mux2_to_1:m3                                                                                              ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m5|mux4_to_1:m2                                                                                              ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m5|mux4_to_1:m2|mux2_to_1:m1                                                                                 ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m6|                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m6                                                                                                           ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m6|mux2_to_1:m3                                                                                              ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m6|mux4_to_1:m2                                                                                              ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m6|mux4_to_1:m2|mux2_to_1:m1                                                                                 ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m7|                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m7                                                                                                           ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m7|mux2_to_1:m3                                                                                              ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m7|mux4_to_1:m2                                                                                              ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m7|mux4_to_1:m2|mux2_to_1:m1                                                                                 ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m8|                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m8                                                                                                           ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m8|mux2_to_1:m3                                                                                              ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m8|mux4_to_1:m2                                                                                              ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m8|mux4_to_1:m2|mux2_to_1:m1                                                                                 ; mux2_to_1         ; work         ;
+;       |mux8_to_1:m9|                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m9                                                                                                           ; mux8_to_1         ; work         ;
+;          |mux2_to_1:m3|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m9|mux2_to_1:m3                                                                                              ; mux2_to_1         ; work         ;
+;          |mux4_to_1:m2|                  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m9|mux4_to_1:m2                                                                                              ; mux4_to_1         ; work         ;
+;             |mux2_to_1:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|mux_32:r9|mux8_to_1:m9|mux4_to_1:m2|mux2_to_1:m1                                                                                 ; mux2_to_1         ; work         ;
+;    |sub_add_32bit:r3|                    ; 85 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3                                                                                                                 ; sub_add_32bit     ; work         ;
+;       |adder_32bit:adder1|               ; 82 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1                                                                                              ; adder_32bit       ; work         ;
+;          |adder_16bit:a0|                ; 38 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0                                                                               ; adder_16bit       ; work         ;
+;             |adder_4bit:a0|              ; 5 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a0                                                                 ; adder_4bit        ; work         ;
+;                |or_3bit:or5|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a0|or_3bit:or5                                                     ; or_3bit           ; work         ;
+;                |or_4bit:or8|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a0|or_4bit:or8                                                     ; or_4bit           ; work         ;
+;             |adder_4bit:a1|              ; 9 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a1                                                                 ; adder_4bit        ; work         ;
+;                |and_4bit:and16|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a1|and_4bit:and16                                                  ; and_4bit          ; work         ;
+;                |or_3bit:or5|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a1|or_3bit:or5                                                     ; or_3bit           ; work         ;
+;                |or_4bit:or6|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a1|or_4bit:or6                                                     ; or_4bit           ; work         ;
+;                |or_4bit:or8|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a1|or_4bit:or8                                                     ; or_4bit           ; work         ;
+;             |adder_4bit:a2|              ; 10 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2                                                                 ; adder_4bit        ; work         ;
+;                |and_4bit:and16|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2|and_4bit:and16                                                  ; and_4bit          ; work         ;
+;                |or_3bit:or5|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2|or_3bit:or5                                                     ; or_3bit           ; work         ;
+;                |or_4bit:or6|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2|or_4bit:or6                                                     ; or_4bit           ; work         ;
+;                |or_4bit:or8|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a2|or_4bit:or8                                                     ; or_4bit           ; work         ;
+;             |adder_4bit:a3|              ; 6 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3                                                                 ; adder_4bit        ; work         ;
+;                |or_3bit:or5|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3|or_3bit:or5                                                     ; or_3bit           ; work         ;
+;                |or_4bit:or6|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|adder_4bit:a3|or_4bit:or6                                                     ; or_4bit           ; work         ;
+;             |or_3bit:or2|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|or_3bit:or2                                                                   ; or_3bit           ; work         ;
+;             |or_4bit:or3|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a0|or_4bit:or3                                                                   ; or_4bit           ; work         ;
+;          |adder_16bit:a1|                ; 38 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1                                                                               ; adder_16bit       ; work         ;
+;             |adder_4bit:a0|              ; 8 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a0                                                                 ; adder_4bit        ; work         ;
+;                |or_4bit:or6|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a0|or_4bit:or6                                                     ; or_4bit           ; work         ;
+;                |or_4bit:or8|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a0|or_4bit:or8                                                     ; or_4bit           ; work         ;
+;             |adder_4bit:a1|              ; 8 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1                                                                 ; adder_4bit        ; work         ;
+;                |or_4bit:or6|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1|or_4bit:or6                                                     ; or_4bit           ; work         ;
+;                |or_4bit:or8|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a1|or_4bit:or8                                                     ; or_4bit           ; work         ;
+;             |adder_4bit:a2|              ; 7 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a2                                                                 ; adder_4bit        ; work         ;
+;                |or_3bit:or5|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a2|or_3bit:or5                                                     ; or_3bit           ; work         ;
+;             |adder_4bit:a3|              ; 5 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a3                                                                 ; adder_4bit        ; work         ;
+;                |or_4bit:or6|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|adder_4bit:a3|or_4bit:or6                                                     ; or_4bit           ; work         ;
+;             |or_3bit:or2|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|or_3bit:or2                                                                   ; or_3bit           ; work         ;
+;             |or_4bit:or3|                ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|adder_32bit:adder1|adder_16bit:a1|or_4bit:or3                                                                   ; or_4bit           ; work         ;
+;       |xor_32bit_to_1bit:xor1|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|sub_add_32bit:r3|xor_32bit_to_1bit:xor1                                                                                          ; xor_32bit_to_1bit ; work         ;
+;    |xor_32bit:r4|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu_32|xor_32bit:r4                                                                                                                     ; xor_32bit         ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------+
+; State Machine - |alu_32|mod:r8|mod_cu:cu1|curr_state                      ;
++-------------------+------------------+-------------------+----------------+
+; Name              ; curr_state.START ; curr_state.RESULT ; curr_state.SUB ;
++-------------------+------------------+-------------------+----------------+
+; curr_state.START  ; 0                ; 0                 ; 0              ;
+; curr_state.SUB    ; 1                ; 0                 ; 1              ;
+; curr_state.RESULT ; 1                ; 1                 ; 0              ;
++-------------------+------------------+-------------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                 ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+; mod:r8|mod_dp:dp1|result[0]                         ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[1]                         ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[2]                         ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[3]                         ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[4]                         ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[5]                         ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[6]                         ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[7]                         ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[8]                         ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[9]                         ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[10]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[11]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[12]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[13]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[14]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[15]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[16]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[17]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[18]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[19]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[20]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[21]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[22]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[23]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[24]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[25]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[26]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[27]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[28]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[29]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[30]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_dp:dp1|result[31]                        ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_cu:cu1|next_state.RESULT_42              ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; mod:r8|mod_cu:cu1|next_state.SUB_48                 ; mod:r8|mod_cu:cu1|curr_state.RESULT ; yes                    ;
+; Number of user-specified and inferred latches = 34  ;                                     ;                        ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; mod:r8|mod_cu:cu1|curr_state.START    ; Lost fanout        ;
+; mod:r8|mod_cu:cu1|curr_state~3        ; Lost fanout        ;
+; Total Number of Removed Registers = 2 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 34    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; 7:1                ; 31 bits   ; 124 LEs       ; 124 LEs              ; 0 LEs                  ; No         ; |alu_32|mux_32:r9|mux8_to_1:m4|mux2_to_1:m3|result ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mod:r8|mod_dp:dp1|comparator_32bit:com1|sub_add_32bit:sub_32bit_1"                           ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; aluop         ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; result[30..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "mod:r8|mod_dp:dp1|sub_add_32bit:sub1" ;
++-------+-------+----------+---------------------------------------+
+; Port  ; Type  ; Severity ; Details                               ;
++-------+-------+----------+---------------------------------------+
+; aluop ; Input ; Info     ; Stuck at VCC                          ;
++-------+-------+----------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "LessThan32Bit:r2|sub_add_32bit:sub1"                                                         ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; result[30..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adder_32bit:r1|adder_16bit:a1"                                                                                                  ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                       ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; P15    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                           ;
+; G15    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                           ;
+; result ; Output ; Warning  ; Output or bidir port (17 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[16..16]" have no fanouts ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adder_32bit:r1|adder_16bit:a0|adder_4bit:a0|or_5bit:or7"                              ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; result ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adder_32bit:r1|adder_16bit:a0"                                                                                                  ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                       ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; result ; Output ; Warning  ; Output or bidir port (17 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[16..16]" have no fanouts ;
++--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 34                          ;
+;     ENA               ; 32                          ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 482                         ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 480                         ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 103                         ;
+;         4 data inputs ; 152                         ;
+;         5 data inputs ; 75                          ;
+;         6 data inputs ; 131                         ;
+; boundary_port         ; 101                         ;
+;                       ;                             ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 7.19                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:09     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Sun Dec 10 23:17:28 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projemm -c projemm
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file xor_32bit.v
+    Info (12023): Found entity 1: xor_32bit File: C:/Users/LENOVO/Desktop/quartus/arife/xor_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and_3bit.v
+    Info (12023): Found entity 1: and_3bit File: C:/Users/LENOVO/Desktop/quartus/arife/and_3bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_3bit.v
+    Info (12023): Found entity 1: or_3bit File: C:/Users/LENOVO/Desktop/quartus/arife/or_3bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_4bit.v
+    Info (12023): Found entity 1: or_4bit File: C:/Users/LENOVO/Desktop/quartus/arife/or_4bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and_4bit.v
+    Info (12023): Found entity 1: and_4bit File: C:/Users/LENOVO/Desktop/quartus/arife/and_4bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_5bit.v
+    Info (12023): Found entity 1: or_5bit File: C:/Users/LENOVO/Desktop/quartus/arife/or_5bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and_5bit.v
+    Info (12023): Found entity 1: and_5bit File: C:/Users/LENOVO/Desktop/quartus/arife/and_5bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder_4bit.v
+    Info (12023): Found entity 1: adder_4bit File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder_32bit.v
+    Info (12023): Found entity 1: adder_32bit File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sub_add_32bit.v
+    Info (12023): Found entity 1: sub_add_32bit File: C:/Users/LENOVO/Desktop/quartus/arife/sub_add_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file nor_32bit.v
+    Info (12023): Found entity 1: nor_32bit File: C:/Users/LENOVO/Desktop/quartus/arife/nor_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_32bit.v
+    Info (12023): Found entity 1: or_32bit File: C:/Users/LENOVO/Desktop/quartus/arife/or_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and_32bit.v
+    Info (12023): Found entity 1: and_32bit File: C:/Users/LENOVO/Desktop/quartus/arife/and_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.v
+    Info (12023): Found entity 1: testbench File: C:/Users/LENOVO/Desktop/quartus/arife/testbench.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file xor_32bit_to_1bit.v
+    Info (12023): Found entity 1: xor_32bit_to_1bit File: C:/Users/LENOVO/Desktop/quartus/arife/xor_32bit_to_1bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lessthan32bit.v
+    Info (12023): Found entity 1: LessThan32Bit File: C:/Users/LENOVO/Desktop/quartus/arife/LessThan32Bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and_32bit_to_1bit.v
+    Info (12023): Found entity 1: and_32bit_to_1bit File: C:/Users/LENOVO/Desktop/quartus/arife/and_32bit_to_1bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder_16bit.v
+    Info (12023): Found entity 1: adder_16bit File: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mod_cu.v
+    Info (12023): Found entity 1: mod_cu File: C:/Users/LENOVO/Desktop/quartus/arife/mod_cu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file comparator_32bit.v
+    Info (12023): Found entity 1: comparator_32bit File: C:/Users/LENOVO/Desktop/quartus/arife/comparator_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mod_dp.v
+    Info (12023): Found entity 1: mod_dp File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mod.v
+    Info (12023): Found entity 1: mod File: C:/Users/LENOVO/Desktop/quartus/arife/mod.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mod_tb.v
+    Info (12023): Found entity 1: mod_tb File: C:/Users/LENOVO/Desktop/quartus/arife/mod_tb.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_32.v
+    Info (12023): Found entity 1: alu_32 File: C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_to_1.v
+    Info (12023): Found entity 1: mux2_to_1 File: C:/Users/LENOVO/Desktop/quartus/arife/mux2_to_1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4_to_1.v
+    Info (12023): Found entity 1: mux4_to_1 File: C:/Users/LENOVO/Desktop/quartus/arife/mux4_to_1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux8_to_1.v
+    Info (12023): Found entity 1: mux8_to_1 File: C:/Users/LENOVO/Desktop/quartus/arife/mux8_to_1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_32.v
+    Info (12023): Found entity 1: mux_32 File: C:/Users/LENOVO/Desktop/quartus/arife/mux_32.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at and_3bit.v(6): created implicit net for "temp" File: C:/Users/LENOVO/Desktop/quartus/arife/and_3bit.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at or_3bit.v(4): created implicit net for "temp" File: C:/Users/LENOVO/Desktop/quartus/arife/or_3bit.v Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at or_4bit.v(4): created implicit net for "temp" File: C:/Users/LENOVO/Desktop/quartus/arife/or_4bit.v Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at or_4bit.v(5): created implicit net for "temp1" File: C:/Users/LENOVO/Desktop/quartus/arife/or_4bit.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at and_4bit.v(4): created implicit net for "temp" File: C:/Users/LENOVO/Desktop/quartus/arife/and_4bit.v Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at and_4bit.v(5): created implicit net for "temp1" File: C:/Users/LENOVO/Desktop/quartus/arife/and_4bit.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at or_5bit.v(4): created implicit net for "temp" File: C:/Users/LENOVO/Desktop/quartus/arife/or_5bit.v Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at or_5bit.v(5): created implicit net for "temp1" File: C:/Users/LENOVO/Desktop/quartus/arife/or_5bit.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at or_5bit.v(6): created implicit net for "temp2" File: C:/Users/LENOVO/Desktop/quartus/arife/or_5bit.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at and_5bit.v(4): created implicit net for "temp" File: C:/Users/LENOVO/Desktop/quartus/arife/and_5bit.v Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at and_5bit.v(5): created implicit net for "temp1" File: C:/Users/LENOVO/Desktop/quartus/arife/and_5bit.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at and_5bit.v(6): created implicit net for "temp2" File: C:/Users/LENOVO/Desktop/quartus/arife/and_5bit.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at adder_4bit.v(28): created implicit net for "temp9" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at adder_4bit.v(32): created implicit net for "temp7" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at adder_4bit.v(33): created implicit net for "temp8" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at adder_4bit.v(38): created implicit net for "temp" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at adder_4bit.v(39): created implicit net for "temp1" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at adder_4bit.v(44): created implicit net for "temp3" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at adder_4bit.v(45): created implicit net for "temp4" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at adder_4bit.v(46): created implicit net for "temp5" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at adder_4bit.v(47): created implicit net for "temp6" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 47
+Info (12127): Elaborating entity "alu_32" for the top level hierarchy
+Info (12128): Elaborating entity "adder_32bit" for hierarchy "adder_32bit:r1" File: C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v Line: 11
+Info (12128): Elaborating entity "adder_16bit" for hierarchy "adder_32bit:r1|adder_16bit:a0" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 6
+Warning (10034): Output port "result[16]" at adder_16bit.v(8) has no driver File: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v Line: 8
+Info (12128): Elaborating entity "adder_4bit" for hierarchy "adder_32bit:r1|adder_16bit:a0|adder_4bit:a0" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v Line: 13
+Info (12128): Elaborating entity "and_3bit" for hierarchy "adder_32bit:r1|adder_16bit:a0|adder_4bit:a0|and_3bit:and6" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 32
+Info (12128): Elaborating entity "or_3bit" for hierarchy "adder_32bit:r1|adder_16bit:a0|adder_4bit:a0|or_3bit:or5" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 34
+Info (12128): Elaborating entity "and_4bit" for hierarchy "adder_32bit:r1|adder_16bit:a0|adder_4bit:a0|and_4bit:and8" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 38
+Info (12128): Elaborating entity "or_4bit" for hierarchy "adder_32bit:r1|adder_16bit:a0|adder_4bit:a0|or_4bit:or6" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 41
+Info (12128): Elaborating entity "and_5bit" for hierarchy "adder_32bit:r1|adder_16bit:a0|adder_4bit:a0|and_5bit:and11" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 44
+Info (12128): Elaborating entity "or_5bit" for hierarchy "adder_32bit:r1|adder_16bit:a0|adder_4bit:a0|or_5bit:or7" File: C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v Line: 48
+Info (12128): Elaborating entity "LessThan32Bit" for hierarchy "LessThan32Bit:r2" File: C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v Line: 12
+Info (12128): Elaborating entity "sub_add_32bit" for hierarchy "LessThan32Bit:r2|sub_add_32bit:sub1" File: C:/Users/LENOVO/Desktop/quartus/arife/LessThan32Bit.v Line: 10
+Info (12128): Elaborating entity "xor_32bit_to_1bit" for hierarchy "LessThan32Bit:r2|sub_add_32bit:sub1|xor_32bit_to_1bit:xor1" File: C:/Users/LENOVO/Desktop/quartus/arife/sub_add_32bit.v Line: 9
+Info (12128): Elaborating entity "and_32bit_to_1bit" for hierarchy "LessThan32Bit:r2|and_32bit_to_1bit:and1" File: C:/Users/LENOVO/Desktop/quartus/arife/LessThan32Bit.v Line: 11
+Info (12128): Elaborating entity "xor_32bit" for hierarchy "xor_32bit:r4" File: C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v Line: 14
+Info (12128): Elaborating entity "nor_32bit" for hierarchy "nor_32bit:r5" File: C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v Line: 15
+Info (12128): Elaborating entity "and_32bit" for hierarchy "and_32bit:r6" File: C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v Line: 16
+Info (12128): Elaborating entity "or_32bit" for hierarchy "or_32bit:r7" File: C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v Line: 17
+Info (12128): Elaborating entity "mod" for hierarchy "mod:r8" File: C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v Line: 18
+Info (12128): Elaborating entity "mod_dp" for hierarchy "mod:r8|mod_dp:dp1" File: C:/Users/LENOVO/Desktop/quartus/arife/mod.v Line: 5
+Warning (10240): Verilog HDL Always Construct warning at mod_dp.v(30): inferring latch(es) for variable "result", which holds its previous value in one or more paths through the always construct File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[0]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[1]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[2]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[3]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[4]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[5]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[6]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[7]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[8]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[9]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[10]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[11]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[12]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[13]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[14]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[15]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[16]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[17]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[18]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[19]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[20]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[21]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[22]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[23]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[24]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[25]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[26]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[27]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[28]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[29]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[30]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (10041): Inferred latch for "result[31]" at mod_dp.v(30) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 30
+Info (12128): Elaborating entity "comparator_32bit" for hierarchy "mod:r8|mod_dp:dp1|comparator_32bit:com1" File: C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v Line: 39
+Info (12128): Elaborating entity "mod_cu" for hierarchy "mod:r8|mod_cu:cu1" File: C:/Users/LENOVO/Desktop/quartus/arife/mod.v Line: 6
+Warning (10240): Verilog HDL Always Construct warning at mod_cu.v(29): inferring latch(es) for variable "next_state", which holds its previous value in one or more paths through the always construct File: C:/Users/LENOVO/Desktop/quartus/arife/mod_cu.v Line: 29
+Info (10041): Inferred latch for "next_state.RESULT" at mod_cu.v(32) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_cu.v Line: 32
+Info (10041): Inferred latch for "next_state.SUB" at mod_cu.v(32) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_cu.v Line: 32
+Info (10041): Inferred latch for "next_state.START" at mod_cu.v(32) File: C:/Users/LENOVO/Desktop/quartus/arife/mod_cu.v Line: 32
+Info (12128): Elaborating entity "mux_32" for hierarchy "mux_32:r9" File: C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v Line: 19
+Info (12128): Elaborating entity "mux8_to_1" for hierarchy "mux_32:r9|mux8_to_1:m1" File: C:/Users/LENOVO/Desktop/quartus/arife/mux_32.v Line: 6
+Info (12128): Elaborating entity "mux4_to_1" for hierarchy "mux_32:r9|mux8_to_1:m1|mux4_to_1:m1" File: C:/Users/LENOVO/Desktop/quartus/arife/mux8_to_1.v Line: 7
+Info (12128): Elaborating entity "mux2_to_1" for hierarchy "mux_32:r9|mux8_to_1:m1|mux4_to_1:m1|mux2_to_1:m1" File: C:/Users/LENOVO/Desktop/quartus/arife/mux4_to_1.v Line: 6
+Warning (12030): Port "ordered port 5" on the entity instantiation of "a1" is connected to a signal of width 16. The formal width of the signal in the module is 17.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 12
+Warning (12030): Port "ordered port 5" on the entity instantiation of "a0" is connected to a signal of width 16. The formal width of the signal in the module is 17.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 6
+Warning (12030): Port "ordered port 5" on the entity instantiation of "a1" is connected to a signal of width 16. The formal width of the signal in the module is 17.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 12
+Warning (12030): Port "ordered port 5" on the entity instantiation of "a0" is connected to a signal of width 16. The formal width of the signal in the module is 17.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 6
+Warning (12030): Port "ordered port 5" on the entity instantiation of "a1" is connected to a signal of width 16. The formal width of the signal in the module is 17.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 12
+Warning (12030): Port "ordered port 5" on the entity instantiation of "a0" is connected to a signal of width 16. The formal width of the signal in the module is 17.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 6
+Warning (12030): Port "ordered port 5" on the entity instantiation of "a1" is connected to a signal of width 16. The formal width of the signal in the module is 17.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 12
+Warning (12030): Port "ordered port 5" on the entity instantiation of "a0" is connected to a signal of width 16. The formal width of the signal in the module is 17.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 6
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/LENOVO/Desktop/quartus/arife/output_files/projemm.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 611 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 69 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 510 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4842 megabytes
+    Info: Processing ended: Sun Dec 10 23:17:49 2023
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:15
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/LENOVO/Desktop/quartus/arife/output_files/projemm.map.smsg.
+
+

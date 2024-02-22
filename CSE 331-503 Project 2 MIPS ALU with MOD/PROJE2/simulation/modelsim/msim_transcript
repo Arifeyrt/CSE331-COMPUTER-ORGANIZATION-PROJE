@@ -1,0 +1,367 @@
+# Reading pref.tcl
+# do projemm_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/xor_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:49 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/xor_32bit.v 
+# -- Compiling module xor_32bit
+# 
+# Top level modules:
+# 	xor_32bit
+# End time: 23:19:49 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/and_3bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:50 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/and_3bit.v 
+# -- Compiling module and_3bit
+# 
+# Top level modules:
+# 	and_3bit
+# End time: 23:19:50 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/or_3bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:50 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/or_3bit.v 
+# -- Compiling module or_3bit
+# 
+# Top level modules:
+# 	or_3bit
+# End time: 23:19:50 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/or_4bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:50 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/or_4bit.v 
+# -- Compiling module or_4bit
+# 
+# Top level modules:
+# 	or_4bit
+# End time: 23:19:50 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/and_4bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:50 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/and_4bit.v 
+# -- Compiling module and_4bit
+# 
+# Top level modules:
+# 	and_4bit
+# End time: 23:19:50 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/or_5bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:50 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/or_5bit.v 
+# -- Compiling module or_5bit
+# 
+# Top level modules:
+# 	or_5bit
+# End time: 23:19:50 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/and_5bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:50 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/and_5bit.v 
+# -- Compiling module and_5bit
+# 
+# Top level modules:
+# 	and_5bit
+# End time: 23:19:50 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:50 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/adder_4bit.v 
+# -- Compiling module adder_4bit
+# 
+# Top level modules:
+# 	adder_4bit
+# End time: 23:19:51 on Dec 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:51 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v 
+# -- Compiling module adder_32bit
+# 
+# Top level modules:
+# 	adder_32bit
+# End time: 23:19:51 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/sub_add_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:51 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/sub_add_32bit.v 
+# -- Compiling module sub_add_32bit
+# 
+# Top level modules:
+# 	sub_add_32bit
+# End time: 23:19:51 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/nor_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:51 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/nor_32bit.v 
+# -- Compiling module nor_32bit
+# 
+# Top level modules:
+# 	nor_32bit
+# End time: 23:19:51 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/or_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:51 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/or_32bit.v 
+# -- Compiling module or_32bit
+# 
+# Top level modules:
+# 	or_32bit
+# End time: 23:19:51 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/and_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:51 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/and_32bit.v 
+# -- Compiling module and_32bit
+# 
+# Top level modules:
+# 	and_32bit
+# End time: 23:19:51 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/xor_32bit_to_1bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:51 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/xor_32bit_to_1bit.v 
+# -- Compiling module xor_32bit_to_1bit
+# 
+# Top level modules:
+# 	xor_32bit_to_1bit
+# End time: 23:19:52 on Dec 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/LessThan32Bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:52 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/LessThan32Bit.v 
+# -- Compiling module LessThan32Bit
+# 
+# Top level modules:
+# 	LessThan32Bit
+# End time: 23:19:52 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/and_32bit_to_1bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:52 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/and_32bit_to_1bit.v 
+# -- Compiling module and_32bit_to_1bit
+# 
+# Top level modules:
+# 	and_32bit_to_1bit
+# End time: 23:19:52 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:52 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v 
+# -- Compiling module adder_16bit
+# 
+# Top level modules:
+# 	adder_16bit
+# End time: 23:19:52 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/mod_cu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:52 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/mod_cu.v 
+# -- Compiling module mod_cu
+# 
+# Top level modules:
+# 	mod_cu
+# End time: 23:19:52 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/comparator_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:52 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/comparator_32bit.v 
+# -- Compiling module comparator_32bit
+# 
+# Top level modules:
+# 	comparator_32bit
+# End time: 23:19:53 on Dec 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:53 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/mod_dp.v 
+# -- Compiling module mod_dp
+# 
+# Top level modules:
+# 	mod_dp
+# End time: 23:19:53 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/mod.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:53 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/mod.v 
+# -- Compiling module mod
+# 
+# Top level modules:
+# 	mod
+# End time: 23:19:53 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:53 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/alu_32.v 
+# -- Compiling module alu_32
+# 
+# Top level modules:
+# 	alu_32
+# End time: 23:19:54 on Dec 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/mux2_to_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:54 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/mux2_to_1.v 
+# -- Compiling module mux2_to_1
+# 
+# Top level modules:
+# 	mux2_to_1
+# End time: 23:19:54 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/mux4_to_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:54 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/mux4_to_1.v 
+# -- Compiling module mux4_to_1
+# 
+# Top level modules:
+# 	mux4_to_1
+# End time: 23:19:54 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/mux8_to_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:54 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/mux8_to_1.v 
+# -- Compiling module mux8_to_1
+# 
+# Top level modules:
+# 	mux8_to_1
+# End time: 23:19:55 on Dec 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/mux_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:55 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/mux_32.v 
+# -- Compiling module mux_32
+# 
+# Top level modules:
+# 	mux_32
+# End time: 23:19:55 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife {C:/Users/LENOVO/Desktop/quartus/arife/testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:19:55 on Dec 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/arife" C:/Users/LENOVO/Desktop/quartus/arife/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:19:55 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 23:19:55 on Dec 10,2023
+# Loading work.testbench
+# Loading work.alu_32
+# Loading work.adder_32bit
+# Loading work.adder_16bit
+# Loading work.adder_4bit
+# Loading work.and_3bit
+# Loading work.or_3bit
+# Loading work.and_4bit
+# Loading work.or_4bit
+# Loading work.and_5bit
+# Loading work.or_5bit
+# Loading work.LessThan32Bit
+# Loading work.sub_add_32bit
+# Loading work.xor_32bit_to_1bit
+# Loading work.and_32bit_to_1bit
+# Loading work.xor_32bit
+# Loading work.nor_32bit
+# Loading work.and_32bit
+# Loading work.or_32bit
+# Loading work.mod
+# Loading work.mod_dp
+# Loading work.comparator_32bit
+# Loading work.mod_cu
+# Loading work.mux_32
+# Loading work.mux8_to_1
+# Loading work.mux4_to_1
+# Loading work.mux2_to_1
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/r1/a0 File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/r1/a1 File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/r2/sub1/adder1/a0 File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/r2/sub1/adder1/a1 File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/r3/adder1/a0 File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/r3/adder1/a1 File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/r8/dp1/sub1/adder1/a0 File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/r8/dp1/sub1/adder1/a1 File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/r8/dp1/com1/sub_32bit_1/adder1/a0 File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/arife/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/r8/dp1/com1/sub_32bit_1/adder1/a1 File: C:/Users/LENOVO/Desktop/quartus/arife/adder_32bit.v Line: 12
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# x-x-x
+# Time=                5000 in1=00000000000000000000000000100011 in2=00000000000000000000000000001111 AluOP=000 result=00000000000000000000000000000011
+# 0-1-0
+# Time=               15000 in1=00000000000000000000000000100011 in2=00000000000000000000000000001111 AluOP=000 result=00000000000000000000000000000011
+# 1-1-0
+# Time=               25000 in1=00000000000000000000000000100011 in2=00000000000000000000000000001111 AluOP=000 result=00000000000000000000000000000011
+# 1-1-0
+# Time=               35000 in1=00000000000000000000000000100011 in2=00000000000000000000000000001111 AluOP=001 result=00000000000000000000000000101111
+# 0-0-1
+# Time=               45000 in1=00000000000000000000000000100011 in2=00000000000000000000000000001111 AluOP=010 result=00000000000000000000000000101100
+# 0-0-1
+# Time=               55000 in1=00000000000000000000000000100011 in2=00000000000000000000000000001111 AluOP=011 result=11111111111111111111111111010000
+# 0-0-1
+# Time=               65000 in1=00000000000000000000000000100011 in2=00000000000000000000000000001111 AluOP=100 result=00000000000000000000000000000000
+# 0-0-1
+# Time=               75000 in1=00000000000000000000000000100011 in2=00000000000000000000000000001111 AluOP=101 result=00000000000000000000000000110010
+# 0-0-1
+# Time=               85000 in1=00000000000000000000000000100011 in2=00000000000000000000000000001111 AluOP=110 result=00000000000000000000000000010100
+# 0-0-1
+# Time=               95000 in1=00000000000000000000000000100011 in2=00000000000000000000000000001111 AluOP=111 result=00000000000000000000000000000101
+# ** Note: $finish    : C:/Users/LENOVO/Desktop/quartus/arife/testbench.v(49)
+#    Time: 99 ns  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at C:/Users/LENOVO/Desktop/quartus/arife/testbench.v line 49
+# End time: 23:20:10 on Dec 10,2023, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 10

@@ -1,0 +1,120 @@
+Archive Project report for proje1
+Fri Jan 19 16:55:49 2024
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Fri Jan 19 16:55:49 2024 ;
+; Revision Name          ; proje1                                ;
+; Top-level Entity Name  ; mips                                  ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/LENOVO/Desktop/quartus/hw3proje/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/LENOVO/Desktop/quartus/hw3proje/210104004294_arife_yurtseven.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'proje1.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Fri Jan 19 16:55:49 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++--------------------------------------------------------------+
+; Files Archived                                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; adder_4bit.v                                                 ;
+; adder_16bit.v                                                ;
+; adder_32bit.v                                                ;
+; alu.v                                                        ;
+; alu_control.v                                                ;
+; and_3bit.v                                                   ;
+; and_4bit.v                                                   ;
+; and_5bit.v                                                   ;
+; and_32bit.v                                                  ;
+; and_32bit_to_1bit.v                                          ;
+; c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf ;
+; comparator_32bit.v                                           ;
+; control_unit.v                                               ;
+; extend32.v                                                   ;
+; instruction_block.v                                          ;
+; instructionmemory.mem                                        ;
+; instructions.mem                                             ;
+; LessThan32Bit.v                                              ;
+; memory.mem                                                   ;
+; memory_block.v                                               ;
+; mips.v                                                       ;
+; mux2_to_1.v                                                  ;
+; mux4_to_1.v                                                  ;
+; mux8_to_1.v                                                  ;
+; mux32bit_2_to_1.v                                            ;
+; mux_5bit_2_to_1.v                                            ;
+; mux_32.v                                                     ;
+; nor_32bit.v                                                  ;
+; or_3bit.v                                                    ;
+; or_4bit.v                                                    ;
+; or_5bit.v                                                    ;
+; or_32bit.v                                                   ;
+; proje1.qpf                                                   ;
+; proje1.qsf                                                   ;
+; register_block.v                                             ;
+; registerblock_komut.mem                                      ;
+; registers.mem                                                ;
+; shift_left_2.v                                               ;
+; sign_extend.v                                                ;
+; sub_add_32bit.v                                              ;
+; testbench.v                                                  ;
+; testbench_control_unit.v                                     ;
+; xor_32bit.v                                                  ;
+; xor_32bit_to_1bit.v                                          ;
++--------------------------------------------------------------+
+
+

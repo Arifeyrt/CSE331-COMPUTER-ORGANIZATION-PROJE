@@ -1,0 +1,40 @@
+module and_32bit_to_1bit(
+  input [31:0] a,
+  input b,
+  output [31:0] result
+);
+
+  and a0(result[0], a[0], b);
+  and a1(result[1], a[1], b);
+  and a2(result[2], a[2], b);
+  and a3(result[3], a[3], b);
+  and a4(result[4], a[4], b);
+  and a5(result[5], a[5], b);
+  and a6(result[6], a[6], b);
+  and a7(result[7], a[7], b);
+  and a8(result[8], a[8], b);
+  and a9(result[9], a[9], b);
+  and a10(result[10], a[10], b);
+  and a11(result[11], a[11], b);
+  and a12(result[12], a[12], b);
+  and a13(result[13], a[13], b);
+  and a14(result[14], a[14], b);
+  and a15(result[15], a[15], b);
+  and a16(result[16], a[16], b);
+  and a17(result[17], a[17], b);
+  and a18(result[18], a[18], b);
+  and a19(result[19], a[19], b);
+  and a20(result[20], a[20], b);
+  and a21(result[21], a[21], b);
+  and a22(result[22], a[22], b);
+  and a23(result[23], a[23], b);
+  and a24(result[24], a[24], b);
+  and a25(result[25], a[25], b);
+  and a26(result[26], a[26], b);
+  and a27(result[27], a[27], b);
+  and a28(result[28], a[28], b);
+  and a29(result[29], a[29], b);
+  and a30(result[30], a[30], b);
+  and a31(result[31], a[31], b);
+
+endmodule

@@ -1,0 +1,22 @@
+module testbench();
+	
+	wire [31:0] S;
+	
+	reg [31:0] A, B;
+	reg Cin;
+	
+	sub_add_32bit cla1 (S,A,B,Cin);
+	
+	initial begin
+	
+		#0 A = 32'b00011111111111111111111111111111; B = 32'b00000000000000000000000000000001; Cin = 1; 
+		#5 $display("result: %b",S);
+		
+		#0 A = 32'b00000000000000000000000000000000; B = 32'b00000000000000000000000000000001; Cin = 0; 
+		#5 $display("result: %b",S);
+		
+		#5 $display("bitti");
+		
+	end
+
+endmodule

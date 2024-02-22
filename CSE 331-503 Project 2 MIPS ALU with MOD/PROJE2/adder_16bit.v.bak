@@ -1,0 +1,7 @@
+module adder_16bit(
+input P,
+input G,
+input Cin,
+)
+
+endmodule 

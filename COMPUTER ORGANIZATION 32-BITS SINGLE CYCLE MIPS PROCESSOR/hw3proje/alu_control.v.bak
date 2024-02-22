@@ -1,0 +1,4 @@
+module alu_control (
+ output reg [2:0] alu_ctr,
+ input [5:0] function_code,
+ input [2:0] ALUop);

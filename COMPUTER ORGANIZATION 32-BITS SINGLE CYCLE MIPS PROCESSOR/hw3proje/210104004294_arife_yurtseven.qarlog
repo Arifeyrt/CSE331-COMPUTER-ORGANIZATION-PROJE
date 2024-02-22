@@ -1,0 +1,55 @@
+Quartus Prime Archive log --	C:/Users/LENOVO/Desktop/quartus/hw3proje/210104004294_arife_yurtseven.qarlog
+
+Archive:	C:/Users/LENOVO/Desktop/quartus/hw3proje/210104004294_arife_yurtseven.qar
+Date:		Fri Jan 19 16:55:49 2024
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/LENOVO/Desktop/quartus/hw3proje/LessThan32Bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_4bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/alu.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/alu_control.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit_to_1bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/and_3bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/and_4bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/and_5bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/comparator_32bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/control_unit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/extend32.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/instruction_block.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/instructionmemory.mem
+C:/Users/LENOVO/Desktop/quartus/hw3proje/instructions.mem
+C:/Users/LENOVO/Desktop/quartus/hw3proje/memory.mem
+C:/Users/LENOVO/Desktop/quartus/hw3proje/memory_block.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/mips.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/mux2_to_1.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/mux32bit_2_to_1.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/mux4_to_1.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/mux8_to_1.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_32.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_5bit_2_to_1.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/nor_32bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/or_32bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/or_3bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/or_4bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/or_5bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/proje1.qpf
+C:/Users/LENOVO/Desktop/quartus/hw3proje/proje1.qsf
+C:/Users/LENOVO/Desktop/quartus/hw3proje/register_block.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/registerblock_komut.mem
+C:/Users/LENOVO/Desktop/quartus/hw3proje/registers.mem
+C:/Users/LENOVO/Desktop/quartus/hw3proje/shift_left_2.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/sign_extend.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/sub_add_32bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/testbench.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/testbench_control_unit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/xor_32bit.v
+C:/Users/LENOVO/Desktop/quartus/hw3proje/xor_32bit_to_1bit.v
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 44 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

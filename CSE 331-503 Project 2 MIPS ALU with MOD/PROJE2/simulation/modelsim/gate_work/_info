@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/LENOVO/Desktop/quartus/arife/simulation/modelsim
+vadder_32bit
+Z1 !s110 1701850391
+!i10b 1
+!s100 `Y]WIm:S6Io3ERRaHKjdO0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>O@h2R4PWkRF1^zOHhQi80
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1701850360
+8projemm.vo
+Fprojemm.vo
+!i122 0
+L0 32 3055
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1701850391.000000
+!s107 projemm.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|projemm.vo|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z7 tCvgOpt 0
+vtestbench
+R1
+!i10b 1
+!s100 m;79T9ko1jkh`30ef]QgP2
+R2
+I4ObWN]R45JP>m>0kUS@f30
+R3
+R0
+w1701850254
+8C:/Users/LENOVO/Desktop/quartus/arife/testbench.v
+FC:/Users/LENOVO/Desktop/quartus/arife/testbench.v
+!i122 1
+L0 1 26
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/LENOVO/Desktop/quartus/arife/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/arife|C:/Users/LENOVO/Desktop/quartus/arife/testbench.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/arife
+R7

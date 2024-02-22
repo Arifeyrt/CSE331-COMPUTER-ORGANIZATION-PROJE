@@ -1,0 +1,9 @@
+module LessThan32Bit (
+  input [31:0] a,
+  input [31:0] b,
+  input aluop,
+  output [31:0]result
+);
+
+
+

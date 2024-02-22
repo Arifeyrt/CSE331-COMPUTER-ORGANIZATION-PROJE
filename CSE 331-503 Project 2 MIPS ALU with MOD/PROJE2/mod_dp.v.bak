@@ -1,0 +1,36 @@
+module mod_dp(
+input we,
+input re,
+input s,
+input A,
+input B,
+input CLK,
+output result,
+output x);
+
+reg  [31:0] temp;
+wire [31:0] mux_out1;
+wire [31:0] mux_out2;
+wire [31:0] a_or_sub;
+wire [31:0] mod_result;
+
+
+always @(posedge CLK)
+	begin
+	if(we)
+		temp <= a_or_sub;
+	end
+	
+always @
+	begin
+	if(re)
+		result <= temp ;
+	end
+	   
+
+assign mux_out1 = s ? temp : A;
+assign mux_out2 = s ? B : 1'b0;
+
+sub_add_32bit sub1(mux_out1 ,mux_out2,1'b1,a_or_sub);//a_or_sub=temp-B
+comparator com1(x,temp,temp,B);//x 1 se result git 
+endmodule

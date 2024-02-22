@@ -1,0 +1,23 @@
+module alu32(
+  input [31:0] A,
+  input [31:0] B,
+  input [2:0] AluOP,
+  input clk,
+  input reset,
+  output [31:0] result
+);
+  wire [31:0]add, subb, or1, nor1, xor1, and1, slt,mod;
+  wire cin, cout;
+
+  
+ 
+  adder_32bit f1(in1, in2, AluOP[1], add);
+   slt_32bit f5(in1, in2, AluOP, slt); 
+  sub_add_32bit f3(in1, in2, AluOP[1],subb);
+  xor_32bit f2( xor1,in1, in2);
+  nor_32bit f6(nor1,in1, in2);
+  and_32bit f7(and1,in1, in2);
+  or_32bit f8(or1,in1, in2);
+  mod f9(clk,reset,in1,in2, mod); 
+  mux32 f10(add, xor1, sub1, slt, nor1, and1,or1,mod,AluOP, result);
+endmodule

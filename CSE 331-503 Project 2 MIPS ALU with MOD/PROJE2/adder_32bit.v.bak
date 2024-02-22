@@ -1,0 +1,12 @@
+module adder_32bit(input [31:0]a,[31:0]b,input cin, output [31:0]result);
+
+adder_4bit a0([3:0]a,[3:0]b,cin,Cout0,[3:0]result);
+adder_4bit a1([7:3]a,[7:3]b,Cout0,Cout1,[7:3]result); 
+adder_4bit a2([11:7]a,[11:7]b,Cout1,Cout2,[11:7]result);
+adder_4bit a3([15:11]a,[15:11]b,Cout2,Cout3,[15:11]result);
+adder_4bit a4([19:15]a,[19:15]b,Cout3,Cout4,[19:15]result);
+adder_4bit a5([23:19]a,[23:19]b,Cout4,Cout5,[23:19]result);
+adder_4bit a6([27:23]a,[27:23]b,Cout5,Cout6,[27:23]result);
+adder_4bit a7([31:27]a,[31:27]b,Cout6,Cout7,[31:27]result);
+
+endmodule

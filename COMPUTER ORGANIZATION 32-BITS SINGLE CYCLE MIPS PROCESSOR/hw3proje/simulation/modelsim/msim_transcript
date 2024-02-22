@@ -1,0 +1,862 @@
+# Reading pref.tcl
+# do proje1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/xor_32bit_to_1bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:14 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/xor_32bit_to_1bit.v 
+# -- Compiling module xor_32bit_to_1bit
+# 
+# Top level modules:
+# 	xor_32bit_to_1bit
+# End time: 13:25:14 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/sub_add_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:14 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/sub_add_32bit.v 
+# -- Compiling module sub_add_32bit
+# 
+# Top level modules:
+# 	sub_add_32bit
+# End time: 13:25:14 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/or_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:14 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/or_32bit.v 
+# -- Compiling module or_32bit
+# 
+# Top level modules:
+# 	or_32bit
+# End time: 13:25:14 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/or_5bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:14 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/or_5bit.v 
+# -- Compiling module or_5bit
+# 
+# Top level modules:
+# 	or_5bit
+# End time: 13:25:14 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/or_4bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:14 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/or_4bit.v 
+# -- Compiling module or_4bit
+# 
+# Top level modules:
+# 	or_4bit
+# End time: 13:25:14 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/or_3bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:14 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/or_3bit.v 
+# -- Compiling module or_3bit
+# 
+# Top level modules:
+# 	or_3bit
+# End time: 13:25:14 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/mux8_to_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:14 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/mux8_to_1.v 
+# -- Compiling module mux8_to_1
+# 
+# Top level modules:
+# 	mux8_to_1
+# End time: 13:25:15 on Jan 19,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/mux4_to_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:15 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/mux4_to_1.v 
+# -- Compiling module mux4_to_1
+# 
+# Top level modules:
+# 	mux4_to_1
+# End time: 13:25:15 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/mux2_to_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:15 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/mux2_to_1.v 
+# -- Compiling module mux2_to_1
+# 
+# Top level modules:
+# 	mux2_to_1
+# End time: 13:25:15 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:15 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_32.v 
+# -- Compiling module mux_32
+# 
+# Top level modules:
+# 	mux_32
+# End time: 13:25:15 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/LessThan32Bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:15 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/LessThan32Bit.v 
+# -- Compiling module LessThan32Bit
+# 
+# Top level modules:
+# 	LessThan32Bit
+# End time: 13:25:15 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit_to_1bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:15 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit_to_1bit.v 
+# -- Compiling module and_32bit_to_1bit
+# 
+# Top level modules:
+# 	and_32bit_to_1bit
+# End time: 13:25:15 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:15 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit.v 
+# -- Compiling module and_32bit
+# 
+# Top level modules:
+# 	and_32bit
+# End time: 13:25:15 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/and_5bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:15 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/and_5bit.v 
+# -- Compiling module and_5bit
+# 
+# Top level modules:
+# 	and_5bit
+# End time: 13:25:15 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/and_4bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:15 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/and_4bit.v 
+# -- Compiling module and_4bit
+# 
+# Top level modules:
+# 	and_4bit
+# End time: 13:25:15 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/and_3bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:15 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/and_3bit.v 
+# -- Compiling module and_3bit
+# 
+# Top level modules:
+# 	and_3bit
+# End time: 13:25:16 on Jan 19,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:16 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v 
+# -- Compiling module adder_32bit
+# 
+# Top level modules:
+# 	adder_32bit
+# End time: 13:25:16 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:16 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v 
+# -- Compiling module adder_16bit
+# 
+# Top level modules:
+# 	adder_16bit
+# End time: 13:25:16 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_4bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:16 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_4bit.v 
+# -- Compiling module adder_4bit
+# 
+# Top level modules:
+# 	adder_4bit
+# End time: 13:25:16 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/mips.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:16 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/mips.v 
+# -- Compiling module mips
+# 
+# Top level modules:
+# 	mips
+# End time: 13:25:16 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/control_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:16 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 13:25:16 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:16 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 13:25:16 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/alu_control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:16 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/alu_control.v 
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# End time: 13:25:16 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/sign_extend.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:16 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/sign_extend.v 
+# -- Compiling module sign_extend
+# 
+# Top level modules:
+# 	sign_extend
+# End time: 13:25:17 on Jan 19,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_5bit_2_to_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:17 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_5bit_2_to_1.v 
+# -- Compiling module mux_5bit_2_to_1
+# 
+# Top level modules:
+# 	mux_5bit_2_to_1
+# End time: 13:25:17 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/mux32bit_2_to_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:17 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/mux32bit_2_to_1.v 
+# -- Compiling module mux32bit_2_to_1
+# 
+# Top level modules:
+# 	mux32bit_2_to_1
+# End time: 13:25:17 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/extend32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:17 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/extend32.v 
+# -- Compiling module extend32
+# 
+# Top level modules:
+# 	extend32
+# End time: 13:25:17 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/register_block.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:17 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/register_block.v 
+# -- Compiling module register_block
+# ** Warning: C:/Users/LENOVO/Desktop/quartus/hw3proje/register_block.v(20): (vlog-2182) 'registers' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	register_block
+# End time: 13:25:17 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/instruction_block.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:17 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/instruction_block.v 
+# -- Compiling module instruction_block
+# 
+# Top level modules:
+# 	instruction_block
+# End time: 13:25:17 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/memory_block.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:17 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/memory_block.v 
+# -- Compiling module memory_block
+# ** Warning: C:/Users/LENOVO/Desktop/quartus/hw3proje/memory_block.v(18): (vlog-2182) 'writeDatas' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	memory_block
+# End time: 13:25:17 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje {C:/Users/LENOVO/Desktop/quartus/hw3proje/testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:17 on Jan 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje" C:/Users/LENOVO/Desktop/quartus/hw3proje/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 13:25:17 on Jan 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 13:25:18 on Jan 19,2024
+# Loading work.testbench
+# Loading work.mips
+# Loading work.instruction_block
+# Loading work.control_unit
+# Loading work.mux_5bit_2_to_1
+# Loading work.register_block
+# Loading work.sign_extend
+# Loading work.mux32bit_2_to_1
+# Loading work.extend32
+# Loading work.and_32bit
+# Loading work.or_32bit
+# Loading work.alu_control
+# Loading work.alu
+# Loading work.adder_32bit
+# Loading work.adder_16bit
+# Loading work.adder_4bit
+# Loading work.and_3bit
+# Loading work.or_3bit
+# Loading work.and_4bit
+# Loading work.or_4bit
+# Loading work.and_5bit
+# Loading work.or_5bit
+# Loading work.LessThan32Bit
+# Loading work.sub_add_32bit
+# Loading work.xor_32bit_to_1bit
+# Loading work.and_32bit_to_1bit
+# Loading work.mux_32
+# Loading work.mux8_to_1
+# Loading work.mux4_to_1
+# Loading work.mux2_to_1
+# Loading work.memory_block
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r1/a0 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r1/a1 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r2/sub1/adder1/a0 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r2/sub1/adder1/a1 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r3/adder1/a0 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r3/adder1/a1 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/adder33/a0 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/adder33/a1 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/adder32/a0 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/adder32/a1 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 12
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# pc: 00000000000000000000000000000000
+# instruction: 00000000010000110000100000000010
+# pc: 00000000000000000000000000000000
+# pc: 00000000000000000000000000000001
+# instruction: 00000000001001000010100000000011
+# pc: 00000000000000000000000000000001
+# pc: 00000000000000000000000000000010
+# instruction: 00001000101001100000000001100100
+# pc: 00000000000000000000000000000010
+# pc: 00000000000000000000000000000011
+# instruction: 00001100111010000000000001100100
+# pc: 00000000000000000000000000000011
+# pc: 00000000000000000000000000000100
+# instruction: 00000001001010100101100000000100
+# pc: 00000000000000000000000000000100
+# pc: 00000000000000000000000000000101
+# instruction: 00000001100011010111000000000101
+# pc: 00000000000000000000000000000101
+# pc: 00000000000000000000000000000110
+# instruction: 00010000110011110000000001100100
+# pc: 00000000000000000000000000000110
+# pc: 00000000000000000000000000000111
+# instruction: 00100000000100000000000000000000
+# pc: 00000000000000000000000000000111
+# pc: 00000000000000000000000000001000
+# instruction: 01000000100010000000000000000000
+# pc: 00000000000000000000000000001000
+# pc: 00000000000000000000000000001001
+# instruction: 00100100100100010000000000000000
+# pc: 00000000000000000000000000001001
+# pc: 00000000000000000000000000001010
+# instruction: 01000100101000010000000000000000
+# pc: 00000000000000000000000000001010
+# pc: 00000000000000000000000000001011
+# instruction: 00000000001000101001000000000111
+# pc: 00000000000000000000000000001011
+# pc: 00000000000000000000000000001100
+# instruction: 00011100001100110000000001100100
+# pc: 00000000000000000000000000001100
+# pc: 00000000000000000000000000001101
+# instruction: 00011100001101000000000000000000
+# pc: 00000000000000000000000000001101
+# pc: 00000000000000000000000000001110
+# instruction: 00011100001101011111111111110110
+# pc: 00000000000000000000000000001110
+# pc: 00000000000000000000000000001111
+# instruction: 00011101000101101111111111110110
+# pc: 00000000000000000000000000001111
+# pc: 00000000000000000000000000010000
+# instruction: 00100000000101110000000000000100
+# pc: 00000000000000000000000000010000
+# pc: 00000000000000000000000000010001
+# instruction: 01000000100110000000000000001101
+# pc: 00000000000000000000000000010001
+# pc: 00000000000000000000000000010010
+# instruction: 00100100100110010000000000000011
+# pc: 00000000000000000000000000010010
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+add wave -position end  sim:/testbench/Mips/clock
+add wave -position end  sim:/testbench/Mips/jump_for_address
+add wave -position end  sim:/testbench/Mips/pc
+add wave -position end  sim:/testbench/Mips/instruction
+add wave -position end  sim:/testbench/Mips/regDst
+add wave -position end  sim:/testbench/Mips/branch
+add wave -position end  sim:/testbench/Mips/memRead
+add wave -position end  sim:/testbench/Mips/memWrite
+add wave -position end  sim:/testbench/Mips/ALUsrc
+add wave -position end  sim:/testbench/Mips/regWrite
+add wave -position end  sim:/testbench/Mips/jump
+add wave -position end  sim:/testbench/Mips/byteOperations
+add wave -position end  sim:/testbench/Mips/move
+add wave -position end  sim:/testbench/Mips/opcode
+add wave -position end  sim:/testbench/Mips/notopcode
+add wave -position end  sim:/testbench/Mips/ALUop
+add wave -position end  sim:/testbench/Mips/read_data1
+add wave -position end  sim:/testbench/Mips/read_data2
+add wave -position end  sim:/testbench/Mips/read_data2_temp
+add wave -position end  sim:/testbench/Mips/write_data
+add wave -position end  sim:/testbench/Mips/read_reg1
+add wave -position end  sim:/testbench/Mips/read_reg2
+add wave -position end  sim:/testbench/Mips/write_reg
+add wave -position end  sim:/testbench/Mips/read_reg2_temp
+add wave -position end  sim:/testbench/Mips/read_reg3_mux
+add wave -position end  sim:/testbench/Mips/write_reg_temp
+add wave -position end  sim:/testbench/Mips/sign_ext_imm
+add wave -position end  sim:/testbench/Mips/imm
+add wave -position end  sim:/testbench/Mips/alu_ctr
+add wave -position end  sim:/testbench/Mips/function_code
+add wave -position end  sim:/testbench/Mips/not_function_code
+add wave -position end  sim:/testbench/Mips/zero_bit
+add wave -position end  sim:/testbench/Mips/read_data
+add wave -position end  sim:/testbench/Mips/address
+add wave -position end  sim:/testbench/Mips/alu_result
+add wave -position end  sim:/testbench/Mips/result_mem
+add wave -position end  sim:/testbench/Mips/address_shift
+add wave -position end  sim:/testbench/Mips/add_pc_result
+add wave -position end  sim:/testbench/Mips/add_alu_pc_result
+add wave -position end  sim:/testbench/Mips/beq_result
+add wave -position end  sim:/testbench/Mips/bneq_result
+add wave -position end  sim:/testbench/Mips/sinyal_pc
+add wave -position end  sim:/testbench/Mips/not_zero_bit
+add wave -position end  sim:/testbench/Mips/new_pc
+add wave -position end  sim:/testbench/Mips/new_pc_temp
+add wave -position end  sim:/testbench/Mips/jal_sinyal
+add wave -position end  sim:/testbench/Mips/jal_or_jump_sinyal
+add wave -position end  sim:/testbench/Mips/jump_jal_address
+add wave -position end  sim:/testbench/Mips/new_pc_or_jal
+add wave -position end  sim:/testbench/Mips/jal_or_mem_result
+add wave -position end  sim:/testbench/Mips/jr_sinyal
+add wave -position end  sim:/testbench/Mips/jal
+add wave -position end  sim:/testbench/Mips/bnq_sinyal
+add wave -position end  sim:/testbench/Mips/temp_regwrite
+add wave -position end  sim:/testbench/Mips/not_jr_sinyal
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r1/a0 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r1/a1 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r2/sub1/adder1/a0 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r2/sub1/adder1/a1 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r3/adder1/a0 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/alu1/r3/adder1/a1 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/adder33/a0 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/adder33/a1 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/adder32/a0 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/adder32/a1 File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v Line: 12
+run -all
+# GetModuleFileName: Belirtilen modül bulunamadý.
+# 
+# 
+# pc: 00000000000000000000000000000000
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "memory.mem". (Current address [256], address range [0:255])    : C:/Users/LENOVO/Desktop/quartus/hw3proje/memory_block.v(12)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/Mips/memo
+# instruction: 00000000010000110000100000000010
+# pc: 00000000000000000000000000000000
+# pc: 00000000000000000000000000000001
+# instruction: 00000000001001000010100000000011
+# pc: 00000000000000000000000000000001
+# pc: 00000000000000000000000000000010
+# instruction: 00001000101001100000000001100100
+# pc: 00000000000000000000000000000010
+# pc: 00000000000000000000000000000011
+# instruction: 00001100111010000000000001100100
+# pc: 00000000000000000000000000000011
+# pc: 00000000000000000000000000000100
+# instruction: 00000001001010100101100000000100
+# pc: 00000000000000000000000000000100
+# pc: 00000000000000000000000000000101
+# instruction: 00000001100011010111000000000101
+# pc: 00000000000000000000000000000101
+# pc: 00000000000000000000000000000110
+# instruction: 00010000110011110000000001100100
+# pc: 00000000000000000000000000000110
+# pc: 00000000000000000000000000000111
+# instruction: 00100000000100000000000000000000
+# pc: 00000000000000000000000000000111
+# pc: 00000000000000000000000000001000
+# instruction: 01000000100010000000000000000000
+# pc: 00000000000000000000000000001000
+# pc: 00000000000000000000000000001001
+# instruction: 00100100100100010000000000000000
+# pc: 00000000000000000000000000001001
+# pc: 00000000000000000000000000001010
+# instruction: 01000100101000010000000000000000
+# pc: 00000000000000000000000000001010
+# pc: 00000000000000000000000000001011
+# instruction: 00000000001000101001000000000111
+# pc: 00000000000000000000000000001011
+# pc: 00000000000000000000000000001100
+# instruction: 00011100001100110000000001100100
+# pc: 00000000000000000000000000001100
+# pc: 00000000000000000000000000001101
+# instruction: 00011100001101000000000000000000
+# pc: 00000000000000000000000000001101
+# pc: 00000000000000000000000000001110
+# instruction: 00011100001101011111111111110110
+# pc: 00000000000000000000000000001110
+# pc: 00000000000000000000000000001111
+# instruction: 00011101000101101111111111110110
+# pc: 00000000000000000000000000001111
+# pc: 00000000000000000000000000010000
+# instruction: 00100000000101110000000000000100
+# pc: 00000000000000000000000000010000
+# pc: 00000000000000000000000000010001
+# instruction: 01000000100110000000000000001101
+# pc: 00000000000000000000000000010001
+# pc: 00000000000000000000000000010010
+# instruction: 00100100100110010000000000000011
+# pc: 00000000000000000000000000010010
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# pc: 00000000000000000000000000010100
+# instruction: 10000001000110110000000000000000
+# pc: 00000000000000000000000000010100
+# pc: 00000000000000000000000000010101
+# instruction: 10001100001000100000000000000101
+# pc: 00000000000000000000000000010101
+# pc: 00000000000000000000000000010110
+# instruction: 10001111110111111111111111111011
+# pc: 00000000000000000000000000010110
+# pc: 00000000000000000000000000010111
+# instruction: 10011100001000101111111111111011
+# pc: 00000000000000000000000000010111
+# pc: 00000000000000000000000000010011
+# instruction: 01000100101110100000000000000101
+# pc: 00000000000000000000000000010011
+# End time: 13:37:47 on Jan 19,2024, Elapsed time: 0:12:29
+# Errors: 0, Warnings: 11

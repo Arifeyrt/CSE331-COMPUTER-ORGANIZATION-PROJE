@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at adder_4bit.v(5): object "P" differs only in case from object "p" in the same scope File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_4bit.v Line: 5
+Info (10281): Verilog HDL Declaration information at adder_4bit.v(6): object "G" differs only in case from object "g" in the same scope File: C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_4bit.v Line: 6

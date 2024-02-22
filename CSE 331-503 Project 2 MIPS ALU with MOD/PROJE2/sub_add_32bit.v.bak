@@ -1,0 +1,11 @@
+module sub_add_32bit(
+input [31:0]a,[32:0]b,
+input aluop,
+output [31:0]result);
+wire [31:0]xorb;
+
+xor_32bit xor1([32:0]b,input aluop,output [31:0]xorb);
+adder_32bit(input [31:0]a,[31:0]xorb,input aluop, output [31:0]result);
+
+endmodule
+

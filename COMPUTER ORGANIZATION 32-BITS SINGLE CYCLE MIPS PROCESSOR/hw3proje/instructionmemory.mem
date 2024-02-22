@@ -1,0 +1,53 @@
+000000 00001 00010 00011 000010
+000000 00001 00010 00011 000011
+000010 00001 00010 00011 000000
+000011 00001 00010 00011 000000
+000000 00001 00010 00011 000100
+000000 00001 00010 00011 000101
+000100 00001 00010 00011 000100
+000101 00001 00010 00011 000101
+001000 00001 00010 00011 000000
+010000 00001 00010 00011 000000
+001001 00001 00010 00011 000000
+010001 00001 00010 00011 000000
+000000 00001 00010 00011 000111
+000111 00001 00010 00011 000000
+100011 00001 00010 00011 000000
+100111 00001 00010 00011 000000
+111000 00001 00010 00011 000000
+111001 00001 00010 00011 000000
+000000 00001 00010 00011 001000
+
+`timescale 1ns / 1ps
+
+module testbench;
+    wire [31:0] alu_result;
+    wire zero_bit;
+    reg [31:0] alu_src1;
+    reg [31:0] alu_src2;
+    reg [2:0] alu_ctr;
+
+
+    // Instantiate the alu module
+    alu u1 (.alu_src1(alu_src1), .alu_src2(alu_src2), .alu_ctr(alu_ctr), .alu_result(alu_result), .zero_bit(zero_bit));
+
+    initial begin
+        // Initialize inputs
+        alu_src1 = 32'h00000000;
+        alu_src2 = 32'h00000000;
+        alu_ctr = 3'b000; // and
+
+        // Apply a sequence of 32-bit values
+        #10 alu_src1 = 32'h00000001; alu_src2 = 32'h00000001; alu_ctr = 3'b001; // or
+        #10 alu_src1 = 32'd17 ; alu_src2 = 32'd21; alu_ctr = 3'b100; // less
+        #10 alu_src1 = 32'h00010001; alu_src2 = 32'h00110001; alu_ctr = 3'b101; // add
+        #10 alu_src1 = 32'h01101101; alu_src2 = 32'h01001001; alu_ctr = 3'b110; // sub
+
+        // End the simulation
+    end
+
+    // Monitor the outputs
+    initial begin
+        $monitor("At time %d: alu_src1=%h, alu_src2=%h, alu_ctr=%b, alu_result=%h, zero_bit=%b", $time, alu_src1, alu_src2, alu_ctr, alu_result, zero_bit);
+    end
+endmodule

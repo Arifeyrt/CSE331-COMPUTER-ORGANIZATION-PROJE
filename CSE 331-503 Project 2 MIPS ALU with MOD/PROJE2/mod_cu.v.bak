@@ -1,0 +1,55 @@
+module mod_cu(
+input reset,
+input CLK,
+input x,
+output we,
+output s,
+output as);
+
+
+reg [1:0] curr_state, next_state;
+localparam  START =2'b00,
+            SUB=2'b01,
+				COMP=2'b10
+				RESULT=2'b11;
+				
+            
+
+
+always @(posedge CLK)
+  begin
+    if (reset)
+      curr_state <= START;
+    else 
+       curr_state <= next_state;
+  end
+  
+  
+    
+always @(*) 
+	begin
+	case (curr_state)
+     START:	begin
+					next_state = SUB;
+				end
+				
+	
+	  SUB:	begin
+					next_state = COMP;
+				end
+				
+				
+	  COMP:	begin
+				if (x) //lessthan temp<B oldugunda 1 döndürecek olmadığında tekrar suba dönecek
+				next_state = RESULT;
+								 
+			   else  
+				next_state = SUB;
+								 
+				end
+				
+     RESULT: begin
+				 end
+   endcase
+   end
+	

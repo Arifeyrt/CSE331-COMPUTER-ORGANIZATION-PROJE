@@ -1,0 +1,60 @@
+module mod_tb;
+
+    reg CLK, reset, we, re, s,x;
+    reg [31:0] A, B;
+    wire [31:0] mod_result;
+
+
+    // Instantiate mod module
+    mod uut (
+       A,B,reset,CLK,mod_result
+    );
+
+    // Clock generation
+    always begin
+        #5 clk = ~clk;
+    end
+
+    // Initializations
+    initial begin
+        clk = 0;
+        reset = 1;
+        x = 0;
+        we = 0;
+        re = 0;
+        s = 0;
+        A = 0;
+        B = 0;
+        
+        // Apply reset
+        #10 reset = 0;
+
+
+        // Test Case 2
+        #10 A = 15;
+        #10 B = 5;
+        #10 x = 0;
+        #10 we = 1;
+        #10 re = 1;
+        #10 s = 1;
+
+        // Print results for Test Case 2
+        $display("Test Case 2: mod_result = %d  lt = %d", mod_result, x);
+
+        // Test Case 3
+        #10 A = 8;
+        #10 B = 8;
+        #10 x= 0;
+        #10 we = 1;
+        #10 re = 1;
+        #10 s = 1;
+
+        // Print results for Test Case 3
+
+        $display("Test Case 3: mod_result = %d  lt = %d", mod_result, x);
+
+
+        #10 $finish;
+    end
+
+endmodule

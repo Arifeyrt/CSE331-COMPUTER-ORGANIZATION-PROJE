@@ -1,0 +1,6 @@
+
+State Machine - |alu_32|mod:r8|mod_cu:cu1|curr_state
+Name curr_state.START curr_state.RESULT curr_state.SUB 
+curr_state.START 0 0 0 
+curr_state.SUB 1 0 1 
+curr_state.RESULT 1 1 0 

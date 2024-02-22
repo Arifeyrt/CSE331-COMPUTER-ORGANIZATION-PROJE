@@ -1,0 +1,756 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/LENOVO/Desktop/quartus/hw3proje/simulation/modelsim
+vadder_16bit
+Z1 !s110 1705659916
+!i10b 1
+!s100 mN8[[nk^_Y@G=z]HaCDBH3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I77hlVGz[a7OeaBIi>X?UE2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1702208114
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v
+!i122 17
+Z4 L0 1 49
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1705659916.000000
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_16bit.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje
+Z9 tCvgOpt 0
+vadder_32bit
+R1
+!i10b 1
+!s100 >PKl9G2ZS<z[^fOKNoeFb1
+R2
+IMcbEjE1bWl2E93_G@mZ=R3
+R3
+R0
+w1705659241
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v
+!i122 16
+Z10 L0 1 14
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_32bit.v|
+!i113 1
+R7
+R8
+R9
+vadder_4bit
+R1
+!i10b 1
+!s100 17HYW:i8@_>=b41S5`J5o3
+R2
+IPmDjzoAR1LGz:[ECjD8632
+R3
+R0
+w1702198252
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_4bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/adder_4bit.v
+!i122 18
+L0 1 70
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_4bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/adder_4bit.v|
+!i113 1
+R7
+R8
+R9
+valu
+R1
+!i10b 1
+!s100 A]7jCB=b5aQT3M:55Ldg;3
+R2
+I?NWh@BYAGSIV?_EC>OX9G3
+R3
+R0
+w1705659168
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/alu.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/alu.v
+!i122 21
+Z11 L0 1 20
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/alu.v|
+!i113 1
+R7
+R8
+R9
+valu_control
+R1
+!i10b 1
+!s100 ODIQUDNRm1CDYhnf`?;h>1
+R2
+I3WI<f1?53]HBjJHXSXlho3
+R3
+R0
+w1705229600
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/alu_control.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/alu_control.v
+!i122 22
+L0 1 37
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/alu_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/alu_control.v|
+!i113 1
+R7
+R8
+R9
+vand_32bit
+Z12 !s110 1705659915
+!i10b 1
+!s100 hi7D2;C1n=CMeXaHe=:R12
+R2
+IDI6Hm`K47nMY@mTfb<9KH3
+R3
+R0
+w1701803752
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit.v
+!i122 12
+Z13 L0 1 40
+R5
+r1
+!s85 0
+31
+Z14 !s108 1705659915.000000
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit.v|
+!i113 1
+R7
+R8
+R9
+vand_32bit_to_1bit
+R12
+!i10b 1
+!s100 _chUlHPMFc<z9Y@5I<<bS0
+R2
+I?1WLzSAC9NSK1cPYBNhQR1
+R3
+R0
+w1701854852
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit_to_1bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit_to_1bit.v
+!i122 11
+R13
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit_to_1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/and_32bit_to_1bit.v|
+!i113 1
+R7
+R8
+R9
+vand_3bit
+R1
+!i10b 1
+!s100 JQKLZaOX<SdZI1@HIf@e21
+R2
+IhZ^QaT:Kcde3OC^5M8=Mz3
+R3
+R0
+w1702239092
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/and_3bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/and_3bit.v
+!i122 15
+Z15 L0 1 8
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/and_3bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/and_3bit.v|
+!i113 1
+R7
+R8
+R9
+vand_4bit
+R12
+!i10b 1
+!s100 :KO;4BIhP51ZoWohn7>S?0
+R2
+IN9fbo`?bQXO^ik4f6nW<k2
+R3
+R0
+Z16 w1701810192
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/and_4bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/and_4bit.v
+!i122 14
+Z17 L0 1 7
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/and_4bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/and_4bit.v|
+!i113 1
+R7
+R8
+R9
+vand_5bit
+R12
+!i10b 1
+!s100 Ig<o2BK@JSo3Y@maagPk42
+R2
+I5S4m^SeE85?5EQT`IQKJ^0
+R3
+R0
+Z18 w1701810248
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/and_5bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/and_5bit.v
+!i122 13
+R15
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/and_5bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/and_5bit.v|
+!i113 1
+R7
+R8
+R9
+vcontrol_unit
+R1
+!i10b 1
+!s100 lkfnS1GHfYnU`bIKJ_NHh0
+R2
+IU4NL;IRciUViag8MnOC>Z0
+R3
+R0
+w1705656364
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/control_unit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/control_unit.v
+!i122 20
+L0 1 63
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/control_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/control_unit.v|
+!i113 1
+R7
+R8
+R9
+vextend32
+Z19 !s110 1705659917
+!i10b 1
+!s100 YMNC7IF6?WdaL7Z5B:5O`2
+R2
+IQQf=_8?HSCFH1kiB1l6>?3
+R3
+R0
+w1705259986
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/extend32.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/extend32.v
+!i122 26
+L0 1 36
+R5
+r1
+!s85 0
+31
+Z20 !s108 1705659917.000000
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/extend32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/extend32.v|
+!i113 1
+R7
+R8
+R9
+vinstruction_block
+R19
+!i10b 1
+!s100 MGl?VM32]1O?C1fRCiUBY2
+R2
+In4c]EA:=`D8RfoB6g?mOL1
+R3
+R0
+w1705359573
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/instruction_block.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/instruction_block.v
+!i122 28
+L0 1 21
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/instruction_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/instruction_block.v|
+!i113 1
+R7
+R8
+R9
+vLessThan32Bit
+R12
+!i10b 1
+!s100 0`WaO`BTbbmhaPiHJB:VS3
+R2
+I9AlEP46WN_XOh]XgaY`XG0
+R3
+R0
+w1702239214
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/LessThan32Bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/LessThan32Bit.v
+!i122 10
+R10
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/LessThan32Bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/LessThan32Bit.v|
+!i113 1
+R7
+R8
+R9
+n@less@than32@bit
+vmemory_block
+R19
+!i10b 1
+!s100 Vi7Ak7:0OLNC[gQfPLANc0
+R2
+IPiVo>RggJ[6eY>H]9Rd3F1
+R3
+R0
+w1705442421
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/memory_block.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/memory_block.v
+!i122 29
+R4
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/memory_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/memory_block.v|
+!i113 1
+R7
+R8
+R9
+vmips
+R1
+!i10b 1
+!s100 RRXSWYnS7NGfXPTW;38h72
+R2
+IbgZQ;Q[;P9P<H2<coPad92
+R3
+R0
+w1705657856
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/mips.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/mips.v
+!i122 19
+L0 1 184
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/mips.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/mips.v|
+!i113 1
+R7
+R8
+R9
+vmux2_to_1
+R12
+!i10b 1
+!s100 Qj?B;94?oP8MMCo1<@MoT3
+R2
+IgQBAd2j:28ffGlHRz?XPK3
+R3
+R0
+w1702223258
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/mux2_to_1.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/mux2_to_1.v
+!i122 8
+Z21 L0 1 12
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/mux2_to_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/mux2_to_1.v|
+!i113 1
+R7
+R8
+R9
+vmux32bit_2_to_1
+R19
+!i10b 1
+!s100 4=ij0KgP?Y]V<4DWK[Ak_2
+R2
+IHGD7jNFZTXg^AzonEd1m:0
+R3
+R0
+w1705264589
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/mux32bit_2_to_1.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/mux32bit_2_to_1.v
+!i122 25
+R11
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/mux32bit_2_to_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/mux32bit_2_to_1.v|
+!i113 1
+R7
+R8
+R9
+vmux4_to_1
+R12
+!i10b 1
+!s100 eo04>lGKBSmX^>L:zFoHe3
+R2
+Ib=nWjUcG4b:Nl]?[i68o80
+R3
+R0
+w1702224036
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/mux4_to_1.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/mux4_to_1.v
+!i122 7
+L0 1 10
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/mux4_to_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/mux4_to_1.v|
+!i113 1
+R7
+R8
+R9
+vmux8_to_1
+R12
+!i10b 1
+!s100 5W::>c?C[cX[105]MG;@E1
+R2
+IM@;ggL15O]RM3=9V=z3<P2
+R3
+R0
+w1702223952
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/mux8_to_1.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/mux8_to_1.v
+!i122 6
+L0 1 11
+R5
+r1
+!s85 0
+31
+Z22 !s108 1705659914.000000
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/mux8_to_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/mux8_to_1.v|
+!i113 1
+R7
+R8
+R9
+vmux_32
+R12
+!i10b 1
+!s100 4Zo29alC]T2Y:7[ZF60>c1
+R2
+ILBXUf]QLf2V[28209T6mc3
+R3
+R0
+w1702223988
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_32.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/mux_32.v
+!i122 9
+L0 1 38
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_32.v|
+!i113 1
+R7
+R8
+R9
+vmux_5bit_2_to_1
+R19
+!i10b 1
+!s100 ;n7M4?bXz^Uk^ZoC5iIn23
+R2
+Ing2ILdOUKE4T`j3>78R_L3
+R3
+R0
+w1705359539
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_5bit_2_to_1.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/mux_5bit_2_to_1.v
+!i122 24
+L0 1 35
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_5bit_2_to_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/mux_5bit_2_to_1.v|
+!i113 1
+R7
+R8
+R9
+vor_32bit
+Z23 !s110 1705659914
+!i10b 1
+!s100 H`=VzHj^:36b>S6RW_m8>1
+R2
+I?MgAAT;8^f:LF<^[8b>Bc0
+R3
+R0
+w1701803740
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/or_32bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/or_32bit.v
+!i122 2
+R13
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/or_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/or_32bit.v|
+!i113 1
+R7
+R8
+R9
+vor_3bit
+R23
+!i10b 1
+!s100 =FHaEm7H@hI]?<WdV=o[S0
+R2
+IB3D6ICofMTUmO^^1VZCO11
+R3
+R0
+R16
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/or_3bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/or_3bit.v
+!i122 5
+R17
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/or_3bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/or_3bit.v|
+!i113 1
+R7
+R8
+R9
+vor_4bit
+R23
+!i10b 1
+!s100 4GnIf^GA]oS4VS3X60Qlg0
+R2
+Io3`_DEo^^L=:Q2RjmI_aN3
+R3
+R0
+R18
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/or_4bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/or_4bit.v
+!i122 4
+R17
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/or_4bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/or_4bit.v|
+!i113 1
+R7
+R8
+R9
+vor_5bit
+R23
+!i10b 1
+!s100 mW;PFSB8:]H1j2=M?BCB42
+R2
+IV>ZaQ`M^Fc?VYXoQh?e;52
+R3
+R0
+R16
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/or_5bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/or_5bit.v
+!i122 3
+R15
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/or_5bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/or_5bit.v|
+!i113 1
+R7
+R8
+R9
+vregister_block
+R19
+!i10b 1
+!s100 UT5M9^be>ziEG<i]f1PSJ2
+R2
+I_KTg`i;>gZOSAEQ6_4QPn0
+R3
+R0
+w1705345278
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/register_block.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/register_block.v
+!i122 27
+L0 1 32
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/register_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/register_block.v|
+!i113 1
+R7
+R8
+R9
+vsign_extend
+R19
+!i10b 1
+!s100 M8R>JA3JQZ86hfcUz:nhj2
+R2
+ILdQQkb>[cK[:Z]OAWb>`70
+R3
+R0
+w1705273296
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/sign_extend.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/sign_extend.v
+!i122 23
+L0 1 44
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/sign_extend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/sign_extend.v|
+!i113 1
+R7
+R8
+R9
+vsub_add_32bit
+R23
+!i10b 1
+!s100 ]h;kG>HUI>93T8_fd8;nX1
+R2
+IJ[acfb]eBX2^<h<6j=U3d2
+R3
+R0
+w1701965782
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/sub_add_32bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/sub_add_32bit.v
+!i122 1
+R21
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/sub_add_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/sub_add_32bit.v|
+!i113 1
+R7
+R8
+R9
+vtestbench
+R19
+!i10b 1
+!s100 d7jNbHBOYHDT]8^l>KcVH2
+R2
+IAzzjAF74SGTGCIo^z75UZ0
+R3
+R0
+w1705659358
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/testbench.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/testbench.v
+!i122 30
+L0 1 146
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/testbench.v|
+!i113 1
+R7
+R8
+R9
+vxor_32bit_to_1bit
+R23
+!i10b 1
+!s100 z5KXhQ:V<0=:Be]9hY04e3
+R2
+IE=[Lo9KA^UPOU8R9A76Q73
+R3
+R0
+w1701854848
+8C:/Users/LENOVO/Desktop/quartus/hw3proje/xor_32bit_to_1bit.v
+FC:/Users/LENOVO/Desktop/quartus/hw3proje/xor_32bit_to_1bit.v
+!i122 0
+R13
+R5
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/LENOVO/Desktop/quartus/hw3proje/xor_32bit_to_1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LENOVO/Desktop/quartus/hw3proje|C:/Users/LENOVO/Desktop/quartus/hw3proje/xor_32bit_to_1bit.v|
+!i113 1
+R7
+R8
+R9

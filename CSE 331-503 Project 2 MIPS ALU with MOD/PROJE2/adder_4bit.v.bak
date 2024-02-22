@@ -1,0 +1,63 @@
+module adder_4bit(
+input [3:0]a,
+input [3:0]b,
+input cin,
+output Cout,
+output [3:0]result);
+wire [3:0]p,[3:0]g;
+wire [3:0]c1;
+wire [3:0]t;
+
+or or1(p[0],a[0],b[0]);//p0
+and and2(g[0],a[0],b[0]);//go 
+
+or or2(p[1],a[1],b[1]);//p1
+and and3(g[1],a[1],b[1]);//g1
+
+or or3(p[2],a[2],b[2]);//p2
+and and4(g[2],a[2],b[2]);//g2 
+
+or or4(p[3],a[3],b[3]);//p3
+and and4(g[3],a[3],b[3]);//g3
+
+
+and and5(c1[0],p[0],cin)//c1
+
+//c2
+and_3bit and6(temp,p[1],g[0],cin);//p1p0c0
+and and7(temp1,p[1],g[0]);//p1g0
+or_3bit or5(c1[1],g[1],temp1,temp);//or
+
+//c3
+
+and_4bit and8(temp,p[2],p[1],g[0],cin);//p2p1p0c0
+and_3bit and9(temp1,p[2],p[1],g[0]);//p2p1g0
+and and10(temp2,p[2],g[1]);
+or_4bit or6(c1[2],temp,temp1,temp2,cin);
+
+//c4
+and_5bit and11(temp,p[3],p[2],p[1],g[0],cin);//p3p2p1p0c0
+and_4bit and12(temp0,p[3],p[2],p[1]g[0]);//p3p2p1g0
+and_3bit and13(temp1,p[2],p[2],g[1]);//p3p2g1
+and and14(temp2,p[3],g[2]);
+or_5bit or7(Cout,temp0,temp,temp1,temp2,cin);
+
+
+
+//xor
+xor xor1(t[0],a[0],b[0]);
+xor xor1(result[0],t[0],cin);
+
+xor xor1(t[1],a[1],b[1]);
+xor xor1(result[1],t[1],c1[0]);
+
+xor xor1(t[2],a[2],b[2]);
+xor xor1(result[2],t[2],c1[2]);
+
+xor xor1(t[3],a[3],b[3]);
+xor xor1(result[3],t[3],c1[3]);
+
+
+endmodule
+
+
